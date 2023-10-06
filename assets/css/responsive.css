@@ -28,6 +28,9 @@
 }
 
 @media(max-width: 767px){
+    .testimonial-text-area{
+        margin-bottom: 20px;
+    }
     .search-bar-area {
         display: flex;
         padding: 20px;
@@ -44,7 +47,7 @@
         color: #00000082;
     }
     .mobile-menu-nav {
-        display: block;
+        transition: 0.5s;
         padding: 30px;
         position: fixed;
         height: 100vh;
@@ -52,6 +55,10 @@
         width: 100%;
         top: 0;
         z-index: 9999;
+        left: -100%;
+    }
+    .mobile-menu-nav.active{
+        display: block;
         left: 0;
     }
     .mobile-menu-nav .menu-list{
@@ -135,7 +142,7 @@
     .spring-sale-left-area p{
         margin-bottom: 30px;
     }
-   
+
     .logo-footer-content-area {
         text-align: center;
     }
@@ -156,4 +163,12 @@
     .menu-list.account-menu li{
         margin-right: 10px;
     }
+    button.close-menu {
+    text-align: right;
+    float: right;
+    margin-bottom: 20px;
+    background: transparent;
+    border: transparent;
+    font-size: 25px;
+}
 }

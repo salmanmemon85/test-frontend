@@ -237,3 +237,15 @@ $('.slider-nav').on('click', '.slick-slide', function(event) {
 
   $('.slider-single').slick('slickGoTo', goToSingleSlide);
 });
+
+const closeMenu = document.querySelector(".close-menu")
+const openMenu = document.querySelector(".menu-open")
+const menu = document.querySelector(".mobile-menu-nav")
+
+
+openMenu.addEventListener("click", () => {
+menu.classList.add("active")
+})
+closeMenu.addEventListener("click", () => {
+menu.classList.remove("active")
+})
